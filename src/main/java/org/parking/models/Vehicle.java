@@ -1,15 +1,20 @@
 package org.parking.models;
 
 public class Vehicle extends BaseModel {
-    private String licensePlateNumber;
+    private String vehicleNumber;
     private VehicleType vehicleType;
 
-    public String getLicensePlateNumber() {
-        return licensePlateNumber;
+    public Vehicle(String vehicleNumber, VehicleType vehicleType) {
+        this.vehicleNumber = vehicleNumber;
+        this.vehicleType = vehicleType;
     }
 
-    public void setLicensePlateNumber(String licensePlateNumber) {
-        this.licensePlateNumber = licensePlateNumber;
+    public String getvehicleNumber() {
+        return vehicleNumber;
+    }
+
+    public void setvehicleNumber(String vehicleNumber) {
+        this.vehicleNumber = vehicleNumber;
     }
 
     public VehicleType getVehicleType() {
